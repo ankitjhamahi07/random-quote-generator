@@ -1,5 +1,5 @@
 # Random Quote Generator Vanilla HTML/CSS/JS Only
 
-A Pen created on CodePen.io. Original URL: [https://codepen.io/akj007ind/pen/wvqjjay](https://codepen.io/akj007ind/pen/wvqjjay).
+devchallenges.io Challenge to create a random quote generator. 
 
-
+You can only copy the quote as of now. In future implementation, share with a modal will also be added.
