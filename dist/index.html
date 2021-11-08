@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Random Quote Generator Vanilla HTML/CSS/JS Only</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<head>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+
+<div id="container">
+  <nav id="navbar">
+    <div class="random-btn">
+<span class="material-icons" onclick="getQuote()">
+shuffle </span>
+    </div>
+   </nav>
+  
+  <main>
+    <section>
+      <h1>Random Quote Generator</h1>
+      <h4 id="guide-text"> Click on <span class="material-icons guide"> shuffle </span> icon in the top right to generate a random quote </h4>
+      <div class="quote-container" id="quote-container">
+        <div class="quote-text" id="quote-text">
+          <q>
+            Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam id dui posuere blandit. Nulla quis lorem ut libero malesuada feugiat. Nulla quis lorem ut libero malesuada feugiat. Nulla quis lorem ut libero malesuada feugiat.Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam id dui posuere blandit. Nulla quis lorem ut libero malesuada
+            </q>
+        </div>
+        <div class="quote-author"> 
+          <div class="author-details">
+            <p id="author-name">Bill Gates</p>
+          </div>
+          <div class="read-more">
+            
+            <span onclick="copyQuote()" class="material-icons share">
+content_copy
+</span>
+            <span class="material-icons read"> read_more </span>
+              </div>
+         </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="credit"> Made with &#10084 by Ankit</div>
+  </footer>
+</div>
+<script src="script.js"></script>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
