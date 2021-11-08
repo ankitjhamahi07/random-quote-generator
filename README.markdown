@@ -2,4 +2,4 @@
 
 devchallenges.io Challenge to create a random quote generator. 
 
-You can only copy the code as of now. In future implementation, share with a modal will also be added.
+You can only copy the quote as of now. In future implementation, share with a modal will also be added.
