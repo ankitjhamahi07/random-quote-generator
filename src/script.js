@@ -1,20 +1,20 @@
 
 function getQuote() {
             let quote="";
-            return fetch("https://api.quotable.io/random")
+            return fetch("https://quotable.io/quotes?tags=inspirational|success")
               .then(function(response) {
                 return response.json();
               })
               .then(function(data) {
+              console.log(data);
+              const rndInt = randomIntFromInterval(1, data.count)
               let quoteContainer=document.getElementById("quote-container");
               let guideText=document.getElementById("guide-text");
               
               let quoteText=document.getElementById("quote-text");
               let quoteAuthor=document.getElementById("author-name");
-              //let quoteAuthorJob=document.getElementById("author-job");
-              quoteText.innerHTML=data.content;
-              quoteAuthor.innerHTML=data.author;
-              // quoteAuthorJob.innerHTML=data.tags[0];
+              quoteText.innerHTML=data.results[rndInt].content;
+              quoteAuthor.innerHTML=data.results[rndInt].author;
               quoteContainer.style.display="block";
               guideText.style.display="none";
             }
@@ -29,4 +29,8 @@ function copyQuote() {
         document.execCommand("copy");
         window.getSelection().removeAllRanges();
         window.alert("Copied to Clipboard")
+}
+
+function randomIntFromInterval(min, max) { // min and max included 
+  return Math.floor(Math.random() * (max - min + 1) + min)
 }
