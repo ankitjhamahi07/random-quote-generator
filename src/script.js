@@ -1,10 +1,20 @@
 
 function getQuote() {
+            let displayLoader=document.getElementById("loading-text");
+            displayLoader.style.display="block";
+
+            setTimeout(
+            
+            function() {
+
             let quote="";
+
             return fetch("https://quotable.io/quotes?tags=inspirational|success")
+
               .then(function(response) {
                 return response.json();
               })
+
               .then(function(data) {
               console.log(data);
               const rndInt = randomIntFromInterval(1, data.count)
@@ -17,8 +27,12 @@ function getQuote() {
               quoteAuthor.innerHTML=data.results[rndInt].author;
               quoteContainer.style.display="block";
               guideText.style.display="none";
+              displayLoader.style.display="none";
             }
+
             );
+          
+          }, 2000);
 }
 
 function copyQuote() {

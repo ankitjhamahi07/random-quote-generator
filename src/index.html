@@ -1,15 +1,22 @@
+<html>
 <head>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+      <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
       <link rel="stylesheet" href="style.css">
+      <script src="https://kit.fontawesome.com/283da036b7.js" crossorigin="anonymous"></script>
 </head>
 
+<body>
 <div id="container">
+
   <nav id="navbar">
     <div class="random-btn">
-<span class="material-icons" onclick="getQuote()">
-shuffle </span>
-    </div>
+<i class="fas fa-random" onclick="getQuote()"></i>  &nbsp; Inspire 
+</div>
+<div id="loader-container">
+<div id="loading-text"> </div>
+</div>
    </nav>
   
   <main>
@@ -31,7 +38,7 @@ shuffle </span>
             <span onclick="copyQuote()" class="material-icons share">
 content_copy
 </span>
-            <span class="material-icons read"> read_more </span>
+            <span class="material-icons read" onclick="getQuote()"> shuffle </span>
               </div>
          </div>
       </div>
@@ -41,4 +48,30 @@ content_copy
     <div class="credit"> Made with &#10084 and JS by Ankit</div>
   </footer>
 </div>
+<div class="night">
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+</div>
+</body>
+
 <script src="script.js"></script>
+
+</html>
